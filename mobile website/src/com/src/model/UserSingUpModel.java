@@ -2,14 +2,19 @@ package com.src.model;
 
 public class UserSingUpModel {
 
-	public UserSingUpModel()
+	private String firstName,lastName,emailId,password,address,city,state,pincode,mobnum;
+
+	public UserSingUpModel(String firstName,String lastName,String emailId,String password,String repassword,String address,String city,String state,String pincode,String mobnum)
 	{
-		this.first_name = first_name;
+		this.firstName = firstName;
 		this.city = city;
-		this.last_name = last_name;
-		this.email_ID = email_ID;
+		this.lastName = lastName;
+		this.emailId = emailId;
+		
+		if(password==repassword)
 		this.password = password;
-		this.repassword = repassword;
+		
+		
 		this.address = address;
 		this.state = state;
 		this.pincode = pincode;
@@ -18,10 +23,19 @@ public class UserSingUpModel {
 		
 		
 	}
-	private String first_name,last_name,email_ID,password,repassword,address,city,state,pincode,mobnum;
 
 	public String getFirst_name() {
-		return first_name;
+		return firstName;
+	}
+	public String getLast_name() {
+		return lastName;
+	}
+	
+	public String getEmail_ID() {
+		return emailId;
+	}
+	public String getPassword() {
+		return password;
 	}
 	public String getAddress() {
 		return address;
@@ -29,22 +43,6 @@ public class UserSingUpModel {
 
 	public String getCity() {
 		return city;
-	}
-
-	public String getLast_name() {
-		return last_name;
-	}
-
-	public String getEmail_ID() {
-		return email_ID;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public String getRepassword() {
-		return repassword;
 	}
 
 	public String getState() {

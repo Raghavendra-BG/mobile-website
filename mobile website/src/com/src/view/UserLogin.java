@@ -135,7 +135,7 @@ public class UserLogin extends HttpServlet {
 		out.println("<input type='submit' value='Login'>");
 		out.println("</td>");
 		out.println("<td>");
-		out.println("<a href='UserSignup.view' style='color:rgb(154,51,52)'>New User?</a>");
+		out.println("<a href='UserSignUp.view' style='color:rgb(154,51,52)'>New User?</a>");
 		out.println("</td>");
 
 		out.println("</tr>");
